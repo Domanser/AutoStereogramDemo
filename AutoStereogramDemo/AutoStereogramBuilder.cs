@@ -572,7 +572,7 @@ namespace AutoStereogramDemo
 			AddSurface(func, -addWidth, Width + addWidth, -addHeight, Height + addHeight, zClosest);
 		}
 
-		public void AddModelByImage(Bitmap image, Point3D origin, Vector3D xVec, Vector3D yVec, Vector3D zVec, double xSize, double ySize, double zSize, 
+		public void AddModelByDepthMap(Bitmap image, Point3D origin, Vector3D xVec, Vector3D yVec, Vector3D zVec, double xSize, double ySize, double zSize, 
 		 bool whiteIsBackground = true)
 		{
 			xVec.Normalize();

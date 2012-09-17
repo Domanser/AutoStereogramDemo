@@ -248,7 +248,7 @@ namespace AutoStereogramDemo
 			asb.AddSurface(WavesSurfaceFunc, 2.3, 1.7);
 
 			Bitmap bitmap = (Bitmap)Image.FromFile(GetPathAtAssemblyLocation("input\\hi.png"));
-			asb.AddModelByImage(bitmap, new Point3D { X = 0.1, Y = -0.3, Z = 1.8 }, new Vector3D { X = 1, Y = 0.5, Z = -1 },
+			asb.AddModelByDepthMap(bitmap, new Point3D { X = 0.1, Y = -0.3, Z = 1.8 }, new Vector3D { X = 1, Y = 0.5, Z = -1 },
 			 new Vector3D { X = -0.5, Y = 1, Z = -1 }, new Vector3D { X = 1, Y = 1, Z = 1 }, 0.8, 0.8, 0.05);
 
 			Bitmap backgroundImage = (Bitmap)Image.FromFile(GetPathAtAssemblyLocation("input\\background.jpg"));
